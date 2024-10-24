@@ -6,10 +6,16 @@ option go_package = "/gofuckureself";
 
 service MyService {
     rpc GetData(RequestMessage) returns (ResponseMessage);
+
+    rpc GetAnother(BruhMessage) returns (ResponseMessage);
 }
 
 message RequestMessage {
     string query = 1;
+}
+
+message BruhMessage {
+    string bruh = 1;
 }
 
 message ResponseMessage {
